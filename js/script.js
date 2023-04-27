@@ -1,6 +1,5 @@
 function updateTime() {
   //new york
-  let newYorkElement = document.querySelector("#new-york");
   let newYorkDateElement = document.querySelector(".date");
   let newYorkTimeElement = document.querySelector(".time");
   let newYorkTime = moment()
@@ -11,9 +10,8 @@ function updateTime() {
   newYorkDateElement.innerHTML = newYorkDate;
   newYorkTimeElement.innerHTML = newYorkTime;
   //Amsterdam
-  let amsterdamElement = document.querySelector("#amsterdam");
-  let amsterdamDateElement = document.querySelector(".date");
-  let amsterdamTimeElement = document.querySelector(".time");
+  let amsterdamDateElement = document.querySelector("#amsterdam-date");
+  let amsterdamTimeElement = document.querySelector("#amsterdam-time");
   let amsterdamTime = moment()
     .tz("Europe/Amsterdam")
     .format("h:mm:ss [<small>]A[</small>]");
