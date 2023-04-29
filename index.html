@@ -17,17 +17,20 @@
         <option value="America/New_York">New York 🇺🇸</option>
         <option value="Europe/Amsterdam">Amsterdam 🇳🇱</option>
         <option value="Africa/Johannesburg">Johannesburg 🇿🇦</option>
-        <option value="current">Current Location</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        <option value="Asia/Seoul">Seoul 🇰🇷</option>
+        <option value="Asia/Hong_Kong">Hong Kong 🇭🇰</option>
+        <option value="current">Current Location 📍</option>
       </select>
 
       <div id="cities">
         <div class="city" id="new-york">
           <div>
             <h2>New York 🇺🇸</h2>
-            <div class="date"></div>
+            <div class="date" id="date-newyork"></div>
           </div>
           <div>
-            <div class="time"><small></small></div>
+            <div class="time" id="time-newyork"><small></small></div>
           </div>
         </div>
         <div class="city" id="amsterdam">
@@ -37,6 +40,15 @@
           </div>
           <div>
             <div class="time" id="amsterdam-time"><small></small></div>
+          </div>
+        </div>
+        <div class="city" id="johannesburg">
+          <div>
+            <h2>Johannesburg 🇿🇦</h2>
+            <div class="date" id="johannesburg-date"></div>
+          </div>
+          <div>
+            <div class="time" id="johannesburg-time"><small></small></div>
           </div>
         </div>
       </div>
